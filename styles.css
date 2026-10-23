@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #796878;
+}
+
+header {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: solid 2px #b39eb5;
+  background-color: #777696;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#die_screen {
+  background-color: #b39eb5;
+  border: solid 5px #777696;
+  padding: 10px;
+  width: 300px;
+  height: 350px;
+  font-size: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+#dice-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.right_sidebar {
+  background-color: #b39eb5;
+  border: solid 5px #777696;
+  padding: 15px;
+  width: 200px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+}
+
+footer {
+  border: solid 2px #b39eb5;
+  background-color: #777696;
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#roll-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  background-color: #210f31;
+  color: #aa77b5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#clear-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  background-color: #210f31;
+  color: #aa77b5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#select-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  background-color: #210f31;
+  color: #aa77b5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gifs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+  border-radius: 35px;
+  margin-top: 2rem;
+}
+
+#welcome_name {
+  background-color: #210f31;
+  color: #aa77b5;
+  border: solid 5px #777696;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+}
+
+#adventure_starts {
+  background-color: #210f31;
+  color: #aa77b5;
+  border: solid 5px #777696;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+}
+
+#bl_mulligan {
+  background-image: url(https://media1.tenor.com/m/H4QKjMoOY5YAAAAC/brennan-lee-mulligan-dungeons-and-drag-queens.gif);
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 769px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #welcome_name {
+    background-color: #210f31;
+    color: #aa77b5;
+    border: solid 5px #777696;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+    width: max-content;
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+
+  #adventure_starts {
+    background-color: #210f31;
+    color: #aa77b5;
+    border: solid 5px #777696;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+    width: max-content;
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

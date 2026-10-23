@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roller Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my Javascript Project</h1>
+    </header>
+    <div id="welcome_adventurer">
+      <h2 id="welcome_name"></h2>
+      <h2 id="adventure_starts"></h2>
+    </div>
+    <section class="gifs">
+      <div id="bl_mulligan"></div>
+    </section>
+    <section class="wrapper">
+      <section id="die_screen">
+        <h2>Start Rolling Here:</h2>
+        <button id="roll-button">Let's Roll!</button>
+        <button id="clear-button">Clear</button>
+        <button id="select-button">Select All</button>
+      </section>
+      <section id="dice-section">
+        <div class="right_sidebar">
+          <h2>Dice:</h2>
+          <h4>Roll Selected</h4>
+          <h4>
+            <input type="checkbox" id="d4-checkbox" checked />
+            <input
+              type="number"
+              id="d4-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D4: <span id="d4-value">-</span>
+          </h4>
+          <h4>
+            <input type="checkbox" id="d6-checkbox" checked />
+            <input
+              type="number"
+              id="d6-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D6: <span id="d6-value">-</span>
+          </h4>
+          <h4>
+            <input type="checkbox" id="d8-checkbox" checked />
+            <input
+              type="number"
+              id="d8-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D8: <span id="d8-value">-</span>
+          </h4>
+        </div>
+        <div class="right_sidebar">
+          <h2>Dice:</h2>
+
+          <h4>
+            <input type="checkbox" id="d10-checkbox" checked />
+            <input
+              type="number"
+              id="d10-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D10: <span id="d10-value">-</span>
+          </h4>
+
+          <h4>
+            <input type="checkbox" id="percentile-checkbox" checked />
+            <input
+              type="number"
+              id="percentile-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            %: <span id="percentile-value">-</span>
+          </h4>
+
+          <h4>
+            <input type="checkbox" id="d12-checkbox" checked />
+            <input
+              type="number"
+              id="d12-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D12: <span id="d12-value">-</span>
+          </h4>
+
+          <h4>
+            <input type="checkbox" id="d20-checkbox" checked />
+            <input
+              type="number"
+              id="d20-count"
+              value="1"
+              min="1"
+              max="20"
+              style="width: 35px; margin-right: 5px"
+            />
+            D20: <span id="d20-value">-</span>
+          </h4>
+        </div>
+      </section>
+    </section>
+    <footer><h3>Thank you for Rolling with me!!</h3></footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
